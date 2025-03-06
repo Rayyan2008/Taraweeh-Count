@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Counter Section */
+.counter {
+  margin-top: 20px;
+}
+
+/* Break Message */
+.break-message {
+  color: #FFEB3B; /* Bright yellow */
+  font-size: 1.3em;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Button enlarges slightly */
+}
+
+/* Specific Button Styles */
+.increment {
+  background-color: #4CAF50;
+}
+
+.reset {
+  background-color: #f44336;
+}
+
+.home {
+  background-color: #2196F3;
+}
+
+button:active {
+  transform: scale(1); /* Button returns to normal size on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
